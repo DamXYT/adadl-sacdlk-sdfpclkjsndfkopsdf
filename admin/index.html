@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة AFK</title>
+</head>
+<body>
+    <h1>صفحة AFK</h1>
+    <p>هذه الصفحة تم تحميلها بنجاح!</p>
+
+    <h2>قائمة الزوار:</h2>
+    <ul id="visitors-list"></ul>
+
+    <script>
+        fetch('/visitors')
+            .then(response => response.json())
+            .then(data => {
+                const visitorsList = document.getElementById('visitors-list');
+                data.forEach(visitor => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `IP: ${visitor.ip}, عدد الزيارات: ${visitor.count}`;
+                    visitorsList.appendChild(listItem);
+                });
+            })
+            .catch(error => console.error('حدث خطأ:', error));
+    </script>
+</body>
+</html>

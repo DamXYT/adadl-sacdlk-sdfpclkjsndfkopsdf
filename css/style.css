@@ -1,0 +1,489 @@
+body {
+    background: #161629;
+    color: #c0c0c8;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+a {
+    color: #72c100;
+}
+a:hover {
+    color: #72c100;
+}
+a , .btn {
+    transition: 0.3s all;
+    text-decoration: none !important;
+}
+a:hover , .btn:hover {
+    transition: 0.3s all;
+    text-decoration: none !important;
+}
+.gh-content>[id] {
+    color: #fff;
+}
+
+
+
+
+@media (min-width: 786px) {
+  
+    .nav-store {
+        position: absolute !important;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+    .nav-store:after {
+        display: none !important;
+    }
+    .nav-store a {
+        opacity: 1 !important;
+        background: #72c100 !important;
+        color: #fff !important;
+        height: fit-content !important;
+        text-shadow: 0px 2px 3px rgb(0 0 0 / 30%);
+        padding: 10px 30px !important;
+        border-radius: 100px;
+        margin-right: 10px;
+    }
+    .nav-store a:hover {
+        background: #72c100 !important;
+        box-shadow: 0px 1px 10px #72c100;
+        transform: translateY(-5px);
+    }    
+
+}
+
+
+
+
+@media (max-width:786px) {
+  
+    footer .inner , .Vote {
+        flex-direction: column !important;
+        text-align: center !important;
+    }    
+    .FooterBlock.OurStore, .MrVibe {
+        text-align: center !important;
+        margin: 0px !important;
+    }
+    .OurStore a {
+        margin: 25px auto 0px !important;
+    }
+    .VoteSidebar , .VoteContent {
+        width: 100% !important;
+    }
+    .Vote {
+        padding: 0px 15px;
+    }
+    .VoteContent ul {
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    .gh-burger-box:before, .gh-burger-inner:after, .gh-burger-inner:before {
+        height: 2px !important;
+    }
+    .gh-burger-inner:after {
+        transform: translatey(8px) !important;
+    }
+    .gh-burger-inner:before {
+        transform: translatey(-8px) !important;
+    }
+    nav#NavBar {
+        padding: 20px;
+        border-radius: 0px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+#gh-head {
+    background: radial-gradient(64.66% 64.66% at 50% 35.34%, rgba(0, 0, 0, 0) 0%, #171629 100%), linear-gradient(90.09deg, #171629 0.08%, rgb(23 22 41 / 82%) 52.08%, #171629 99.93%), url(../images/tdhmhs4.jpg);
+    background-size: cover !important;
+    background-position: center !important;
+    margin-top: 0px;
+    position: relative;
+    padding: 0px;
+}
+.Logo {
+    position: relative;
+    width: fit-content;
+    margin: 0px auto;
+}
+.site-logo {
+    max-height: 250px;
+    height: 250px;
+    position: relative;
+    z-index: 100;
+    margin-bottom: 8px;
+}
+.IP {
+    position: absolute;
+    bottom: 0px;
+    background: rgb(34 34 51);
+    padding: 10px 30px;
+    border-radius: 100px;
+    color: #fff;
+    font-weight: 600;
+    right: 0;
+    left: 0;
+    width: fit-content;
+    margin: 0px auto;
+    z-index: 1000000;
+    cursor: pointer;
+}
+.IP p {
+    margin: 0px;
+}
+.count {
+    background: linear-gradient(45deg, #72c100, #72c100);
+    padding: 5px 10px;
+    border-radius: 100px;
+    margin: 10px 0px 0px 15px;
+}
+
+#NavBar {
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    padding: 0 22px 0 17px;
+    margin-top: 50px;
+    position: relative;
+}
+#NavBar li {
+    position: relative;
+}
+#NavBar li a {
+    color: #171629;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 95px;
+    font-weight: 700;
+}
+#NavBar li:hover a {
+    color: #72c100;
+}
+#NavBar li:after {
+    content: "";
+    display: block;
+    background-color: #72c100;
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: 0.3s all !important;
+}
+#NavBar li:hover:after {
+    width: calc(100% - 40px);
+}
+#NavBar .nav-current a {
+    color: #72c100;
+    opacity: 1;
+}
+#NavBar .nav-current:after {
+    width: calc(100% - 40px);
+}
+
+
+
+
+.post-card {
+    background: rgb(36 35 53);
+    border-radius: 8px;
+}
+.post-card-content {
+    padding: 0px 25px 25px;
+}
+.post-card-large .post-card-content {
+    padding: 25px;
+}
+.post-card-image-link {
+    border-radius: 8px;
+}
+.post-card-large .post-card-image-link {
+    border-radius: 8px 0px 0px 8px;
+}
+h2.post-card-title {
+    background-image: linear-gradient(114deg,#72c100 0,#72c100 100%);
+    font-weight: 800;
+    font-size: 24px !important;
+    background-color: #72c100;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+    position: relative;
+    text-shadow: 0px 1px 5px rgb(114,193,0 / 28%);
+}
+h2.post-card-title::after {
+    content: "";
+    width: 32px;
+    margin: 10px auto;
+    background: linear-gradient(114deg,#72c100 0,#72c100 100%);
+    /* box-shadow: 0 0 8px #1a91cd; */
+    height: 3px;
+    border-radius: 100px;
+    transition: all .24s ease-in-out;
+    display: block;
+    box-shadow: 0px 1px 8px rgb(114,193,0);
+}
+.post-card-excerpt p {
+    text-align: center;
+    font-weight: 500;
+    color: rgba(255,255,255,0.3);
+    font-size: 16px !important;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+.article-title {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.Vote {
+    display: flex;
+    grid-gap: 25px;
+    margin: 50px 0px;
+}
+.VoteBlock {
+    background: rgb(36 35 53);
+    border-radius: 8px;
+    padding: 20px 40px;
+}
+
+
+.VoteSidebar {
+    width: 30%;
+    text-align: center;
+}
+.VoteIcon {
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+    position: relative;
+}
+.VoteIcon svg {
+    width: 69px;
+    height: 69px;
+    transform: rotate(-6deg);
+}
+svg.shadow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 90px;
+    height: 90px;
+    opacity: 0.1;
+    filter: brightness(0.4);
+}
+.VoteText {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+
+
+
+
+.VoteContent {
+    width: 70%;
+}
+.VoteContent ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 15px;
+    row-gap: 25px;
+}
+.VoteContent li {
+    padding: 0px;
+}
+.VoteContent a {
+    display: block;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: #fff;
+    background: rgba(0,0,0,0.1);
+    border-bottom: 4px solid rgba(255,255,255,0.05);
+}
+.VoteContent a:hover {
+    color: #72c100;
+    border-color: #72c100;
+}
+
+
+
+
+
+
+
+footer {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+.UpperFooter, .LowerFooter {
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+}
+.UpperFooter .inner {
+    display: flex;
+    padding: 50px 0px 30px;
+    grid-gap: 50px;
+}
+.FooterBlock {
+    width: 100%;
+}
+.FooterBlock h3 {
+    margin: 0px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.FooterBlock.FooterLinks {
+    width: 100%;
+    text-align: center;
+}
+.FooterLinks ul {
+    margin: 0px;
+    display: grid;
+    grid-gap: 0px;
+    list-style: none;
+}
+.FooterLinks li {
+    padding: 0px;
+}
+.FooterLinks a {
+    width: 70%;
+    display: block;
+    margin: 0px auto;
+    padding: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: rgba(255,255,255,0.03);
+    border-bottom: 3px solid rgba(255,255,255,0.03);
+}
+.FooterLinks a:hover {
+    color: #fff;
+    border-color: #72c100;
+}
+
+
+
+
+
+
+.FooterBlock.OurStore {
+    text-align: right;
+}
+.OurStore a {
+    display: block;
+    background: #72c100;
+    color: #fff !important;
+    text-shadow: 0px 2px 3px rgb(0 0 0 / 30%);
+    padding: 10px 20px !important;
+    border-radius: 4px;
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 15px;
+    font-weight: 700;
+}
+.nav-store a:hover {
+    background: #f1b818 !important;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+.LowerFooter {
+    width: 100%;
+    background: rgba(0,0,0,0.2);
+    padding: 20px 0px;
+}
+.LowerFooter .inner {
+    display: flex;
+    align-items: center;
+}
+.MrVibe {
+    margin-left: auto;
+    text-align: right;
+}
+
+/* قم بإخفاء القائمة في البداية */
+.gh-head-menu {
+    display: none;
+}
+
+/* عرض القائمة عندما تكون مفتوحة */
+.gh-head-open .gh-head-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #161629;
+    padding: 20px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+}
+
+/* تصميم الروابط */
+.gh-head-menu ul li {
+    margin-bottom: 10px;
+}
+
+.gh-head-menu ul li a {
+    color: #c0c0c8;
+    font-weight: bold;
+    text-decoration: none;
+}
